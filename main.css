@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #006666;
+  color: #e6ffff;
+  overflow:hidden;
+  text-align: center;
+}
+
+.container h1 {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  color: #e6ffff;
+  margin-top: 80px;
+}
+
+.container h3 {
+  color: red;
+}
+
+.container form {
+  margin: 20px;
+}
+
+.container input {
+  display: inline;
+  width: 170px;
+  height: 30px;
+  background-color: steelblue;
+  color: yellow;
+  margin: 3px;
+}
+
+.success-message {
+  margin: 100px;
+}
