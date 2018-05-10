@@ -1,0 +1,26 @@
+<html lang="en">
+  <title> Qi Jing's Python Project</title>
+ <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>Spell Check for Python Project</h1>
+        <h3>Please Type a Paragraph</h3>
+        <form method="POST" action="/">
+          <textarea title="You Must Enter a Sentence !" placeholder="Enter a Sentence" name="text_area" rows="5"
+            cols="50">{{text_input}}</textarea> <br><br>
+          <input type="submit" name="action" value="Check Spelling">
+          <input type="submit" name="action" value="Dictionary">
+        </form>
+        <textarea title="This is the Result !" name="result_area" rows="14" cols="80" 
+         style="background:#99FFFF; color:purple;">{{text_output}}</textarea> 
+        <textarea title="Result !" name="result_area" rows="14" cols="30" 
+         style="background:yellow; color:red;">{{error_output}}</textarea> <br><br>
+        <a href="https://github.com/jingqi8/CIS-024C/blob/master/hw11_qi_jing.ipynb" 
+         target="_blank">View Source Code and Documentation</a>
+        <br><br>
+        <a href="mailto:jingqi@yahoo.com?Subject=Python%20Class" target="_top">Send Feedback to Qi Jing at jingqi@yahoo.com</a>
+      </div>
+    </body>
+</html>
