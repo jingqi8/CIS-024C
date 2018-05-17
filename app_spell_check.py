@@ -65,9 +65,20 @@ def edit_distance(s1, s2):
         distances = distances_
     return distances[-1]
 
+def add_word(word):
+    if word.lower() in words_list:
+       return 1 
+    else:
+       f = open("./static/20K.txt", "a+")       # Open the file contains 20,000 Eiglish words with "Append" mode
+       f.write(word + "\n")          
+       f.close()
+       words_list.append(word)                  # Need to add this new word in to the list
+       return 2
+
 # ---------------------- Main Program -----------------------------------------------------
 if __name__ == "__main__":
 # === Sentence correction ==========
    sentence = raw_input("Please enter a Sentence: ")
    print spell_check(sentence)
+
 
