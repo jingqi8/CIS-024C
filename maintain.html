@@ -1,0 +1,26 @@
+<html lang="en">
+  <title> Qi Jing's Python Project</title>
+ <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>Spell Check for Python Project</h1>
+        <h3>Please Enter a Word</h3>
+        <form method="POST" action="/maintain">
+          <input type="Text" placeholder="Enter a Word" name="word_area" style="background:white; color:black;"><br><br>
+          <input type="submit" name="action" value="Add Word">
+          <input type="submit" name="action" value="Back">
+        </form>
+
+        {% if duplicate %}
+           <h2><font color="cyan">Oops, This Word "{{word}}" Already Exists!</font><h2>
+        {% endif %}
+
+        {% if add %}
+           <h2><font color="cyan">This Word "{{word}}" is Added !</font><h2>
+        {% endif %}
+
+      </div>
+    </body>
+</html>
